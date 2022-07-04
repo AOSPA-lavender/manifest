@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+        <remote name="wHo-EM-i"
+                fetch="https://github.com/wHo-EM-i" />
         <remote name="aospa-xenxynon"
                 fetch="https://github.com/xenxynon-AOSPA"
                 revision="refs/heads/sapphire" />
@@ -27,6 +28,11 @@
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="A12" remote="xenxynon" />
         <project path="kernel/xiaomi/sdm660" name="projects-nexus/android_xtreme_kernel_lavender" remote="github" revision="sapphire" clone-depth="1" />
         <!-- remove & reclone -->
+        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
+          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+          <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+        </project>
         <remove-project name="AOSPA/android_vendor_aospa" />
         <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
