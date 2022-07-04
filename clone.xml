@@ -29,7 +29,7 @@
         <project path="kernel/xiaomi/sdm660" name="projects-nexus/android_xtreme_kernel_lavender" remote="github" revision="sapphire" clone-depth="1" />
 
         <!-- remove & reclone -->
-        <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" clone-depth="1" />
+        <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <project path="device/qcom/common" name="android_device_qcom_common" remote="aospa-xenxynon" clone-depth="1" >
