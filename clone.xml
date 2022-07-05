@@ -33,6 +33,8 @@
           <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
           <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
         </project>
+        <remove-project name="AOSPA/android_frameworks_base" />
+        <project path="android_frameworks_base" name="frameworks/base" revision="sapphire" remote="aospa-xenxynon" clone-depth="1" >
         <remove-project name="AOSPA/android_vendor_aospa" />
         <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
