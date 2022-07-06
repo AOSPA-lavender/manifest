@@ -14,7 +14,7 @@
                 revision="refs/heads/shinka" />
 
         <!-- Stuff -->
-        <project path="external/tinyxml" name="arrowOS/android_external_tinyxml" remote="github" revision="arrow-12.0" clone-depth="1" />
+        <project path="external/tinyxml" name="android_external_tinyxml" remote="lab" clone-depth="1" />
         <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" clone-depth="1" />
         <project path="hardware/qcom/display" name="android_hardware_qcom" revision="pa-display" remote="aospa-xenxynon" clone-depth="1" />
         <project path="hardware/qcom/media" name="android_hardware_qcom" revision="pa-media" remote="aospa-xenxynon" clone-depth="1" />
