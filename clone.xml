@@ -14,8 +14,8 @@
         <!-- Stuff -->
         <project path="external/tinyxml" name="android_external_tinyxml" remote="lab" clone-depth="1" />
         <project path="packages/resources/devicesettingss" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" clone-depth="1" />
-        <project path="hardware/qcom/display" name="android_hardware_qcom" revision="patch-1" remote="xenxynon" clone-depth="1" />
-        <project path="hardware/qcom/media" name="android_hardware_qcom" revision="topaz" remote="kundi" clone-depth="1" />
+        <project path="hardware/qcom/display" name="hardware_qcom_display" revision="patch-1" remote="xenxynon" clone-depth="1" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" revision="topaz" remote="kundi" clone-depth="1" />
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="topaz" remote="kundi" clone-depth="1" />
         <project path="keys" name="certs" remote="xenxynon" revision="pa" />
         <!-- Trees -->
@@ -24,8 +24,6 @@
         <project path="device/xiaomi/sdm660-common" name="pe-tree" remote="lab" revision="13-sdm" />
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="a-l" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="a-l" />
-        <project path="kernel/xiaomi/sdm660" name="projects-nexus/android_xtreme_kernel_lavender" remote="github" revision="sapphire" clone-depth="1" />
-
 
         <remove-project name="AOSPA/android_frameworks_base" />
         <remove-project name="AOSPA/android_vendor_aospa" />
