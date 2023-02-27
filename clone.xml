@@ -1,54 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="wHo-EM-i"
-                fetch="https://github.com/wHo-EM-i" />
-        <remote name="aospa-xenxynon"
-                fetch="https://github.com/xenxynon-AOSPA"
-                revision="refs/heads/sapphire" />
+       <remote name="a-l"
+                fetch="https://github.com/AOSPA-lavender"
+                revision="refs/heads/topaz" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
-        <remote name="XS"
-                fetch="https://github.com/XenStuff" />
+        <remote name="kundi"
+                fetch="https://github.com/aospa-asus-sdm660" />
         <remote name="lab"
                 fetch="https://github.com/xenxynon-lab-404"
                 revision="refs/heads/shinka" />
 
         <!-- Stuff -->
         <project path="external/tinyxml" name="android_external_tinyxml" remote="lab" clone-depth="1" />
-        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" clone-depth="1" />
-        <project path="hardware/qcom/display" name="android_hardware_qcom" revision="pa-display" remote="aospa-xenxynon" clone-depth="1" />
-        <project path="hardware/qcom/media" name="android_hardware_qcom" revision="pa-media" remote="aospa-xenxynon" clone-depth="1" />
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom" revision="pa-audio" remote="aospa-xenxynon" clone-depth="1" />
+        <project path="packages/resources/devicesettingss" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" clone-depth="1" />
+        <project path="hardware/qcom/display" name="android_hardware_qcom" revision="patch-1" remote="xenxynon" clone-depth="1" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom" revision="topaz" remote="kundi" clone-depth="1" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="topaz" remote="kundi" clone-depth="1" />
         <project path="keys" name="certs" remote="xenxynon" revision="pa" />
         <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="aospa-xenxynon" />
-        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="aospa-xenxynon" />
-        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="aospa-xenxynon" />
-        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="aospa-xenxynon" />
-        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="A12" remote="xenxynon" />
+        <project path="kernel/msm-4.4" name="ImSpiDy/kernel_xiaomi_lavender-4.4" remote="github" revision="topaz" />
+        <project path="device/xiaomi/lavender" name="pe-tree" remote="lab" revision="13-sdm" />
+        <project path="device/xiaomi/sdm660-common" name="pe-tree" remote="lab" revision="13-sdm" />
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="a-l" />
+        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="a-l" />
         <project path="kernel/xiaomi/sdm660" name="projects-nexus/android_xtreme_kernel_lavender" remote="github" revision="sapphire" clone-depth="1" />
-        <!-- remove & reclone -->
-        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
-        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
-          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
-          <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
-        </project>
         <remove-project name="AOSPA/android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" revision="sapphire" remote="aospa-xenxynon" clone-depth="1" />
         <remove-project name="AOSPA/android_vendor_aospa" />
-        <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" clone-depth="1" >
+        <remove-project name="AOSPA/android_packages_apps_Settings" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="p-l" revision="topaz" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="p-l" revision="topaz" />
+        <project path="vendor/aospa" name="android_vendor_aospa" revision="kys" remote="a-l" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
-        <remove-project name="AOSPA/android_device_qcom_common" />
-        <project path="device/qcom/common" name="android_device_qcom_common" remote="aospa-xenxynon" clone-depth="1" >
-          <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-        </project>
-        <remove-project name="AOSPA/android_external_f2fs-tools" />
-        <project path="external/f2fs-tools" name="AzurE-007/android_external_f2fs-tools" remote="github" revision="sapphire" clone-depth="1" />
-        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_wfd" />
-        <remove-project name="platform/vendor/qcom-opensource/usb" />
-        <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" clone-depth="1" >
-        <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
-        </project>
-        <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+        <project prebuilts/clang/host/linux-x86/clang-nexus" name="Project-Nexus/nexus-clang" remote="gitlab" revision="nexus-15" />
+
 </manifest>
