@@ -8,7 +8,7 @@
         <remote name="kundi"
                 fetch="https://github.com/aospa-asus-sdm660" />
         <remote name="lab"
-                fetch="https://github.com/xenxynon-lab-404"
+                fetch="https://github.com/P404-lavender"
                 revision="refs/heads/shinka" />
 
         <!-- Stuff -->
