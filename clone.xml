@@ -20,7 +20,7 @@
         <project path="keys" name="certs" remote="xenxynon" revision="pa" />
         <!-- Trees -->
         <project path="kernel/msm-4.4" name="ImSpiDy/kernel_xiaomi_lavender-4.4" remote="github" revision="topaz" />
-        <project path="device/xiaomi/lavender" name="pe-tree" remote="lab" revision="13-sdm" />
+        <project path="device/xiaomi/lavender" name="pe-tree" remote="lab" revision="13-l" />
         <project path="device/xiaomi/sdm660-common" name="pe-tree" remote="lab" revision="13-sdm" />
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="a-l" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="a-l" />
