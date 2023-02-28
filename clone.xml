@@ -35,6 +35,6 @@
         </project>
         <project path="prebuilts/clang/host/linux-x86/clang-nexus" name="Project-Nexus/nexus-clang" remote="gitlab" revision="nexus-15" />
         <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
-        <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="a-l" revision="topaz" />
+        <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="a-l" revision="master" />
 
 </manifest>
