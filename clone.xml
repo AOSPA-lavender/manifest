@@ -10,7 +10,7 @@
         <remote name="XS"
                 fetch="https://github.com/XenStuff" />
         <remote name="lab"
-                fetch="https://github.com/xenxynon-lab-404"
+                fetch="https://github.com/P404-Lavender" 
                 revision="refs/heads/shinka" />
 
         <!-- Stuff -->
