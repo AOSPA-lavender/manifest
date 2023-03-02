@@ -30,7 +30,7 @@
         <remove-project name="AOSPA/android_packages_apps_Settings" />
         <project path="frameworks/base" name="android_frameworks_base" remote="a-l" revision="topaz" />
         <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="a-l" revision="topaz" />
-        <project path="vendor/aospa" name="android_vendor_aospa" revision="topaz" remote="a-l" clone-depth="1" >
+        <project path="vendor/aospa" name="android_vendor_aospa" revision="w" remote="a-l" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <project path="prebuilts/clang/host/linux-x86/clang-nexus" name="Project-Nexus/nexus-clang" remote="gitlab" revision="nexus-15" />
