@@ -6,7 +6,7 @@
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
 
-        <project path="keys" name="certs" remote="xenxynon" revision="pa" />
+        <project path="keys" name="certs" remote="xenxynon" revision="12" />
 
         <!-- remove & reclone -->
 
