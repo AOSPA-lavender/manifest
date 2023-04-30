@@ -2,7 +2,7 @@
 <manifest>
        <remote name="a-l"
                 fetch="https://github.com/AOSPA-lavender"
-                revision="refs/heads/topaz" />
+                revision="refs/heads/topaz-qpr2" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="kundi"
@@ -12,10 +12,10 @@
                 revision="refs/heads/shinka" />
 
         <!-- Stuff -->
-        <project path="external/tinyxml" name="android_external_tinyxml" remote="lab" clone-depth="1" />
+        <project path="external/tinyxml" name="android_external_tinyxml" remote="lab" />
         <project path="packages/resources/devicesettingss" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" clone-depth="1" />
-        <project path="hardware/qcom/display" name="hardware_qcom_display" revision="patch-1" remote="xenxynon" clone-depth="1" />
-        <project path="hardware/qcom/media" name="hardware_qcom_media" revision="topaz" remote="kundi" clone-depth="1" />
+        <project path="hardware/qcom/display" name="hardware_qcom_display" revision="patch-1" remote="xenxynon" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" revision="topaz" remote="kundi" />
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="topaz" remote="kundi" clone-depth="1" />
         <project path="keys" name="certs" remote="xenxynon" revision="pa" />
         <!-- Trees -->
@@ -30,7 +30,7 @@
         <remove-project name="AOSPA/android_packages_apps_Settings" />
         <project path="frameworks/base" name="android_frameworks_base" remote="a-l" revision="topaz" />
         <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="a-l" revision="topaz" />
-        <project path="vendor/aospa" name="android_vendor_aospa" revision="w" remote="a-l" clone-depth="1" >
+        <project path="vendor/aospa" name="android_vendor_aospa" revision="w" remote="a-l" revisio="topaz" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <project path="prebuilts/clang/host/linux-x86/clang-nexus" name="Project-Nexus/nexus-clang" remote="gitlab" revision="nexus-15" />
