@@ -21,5 +21,8 @@
         <remove-project name="AOSPA/android_packages_apps_Launcher3" />
         <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3-1" remote="aospa-xenxynon" />
         <remove-project name="AOSPA/android_bionic" />
+        <remove-project name="AOSPA/android_packages_apps_Settings" />
+
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospa-xenxynon" />
         <project path="bionic" name="pa-gr/android_bionic" revision="topaz" remote="github" />
 </manifest>
