@@ -28,8 +28,8 @@
         <remove-project name="AOSPA/android_frameworks_base" />
         <remove-project name="AOSPA/android_vendor_aospa" />
         <remove-project name="AOSPA/android_packages_apps_Settings" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="a-l" revision="topaz" />
-        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="a-l" revision="topaz" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="a-l" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="a-l" />
         <project path="vendor/aospa" name="android_vendor_aospa" revision="topaz" remote="a-l" revisio="topaz" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
