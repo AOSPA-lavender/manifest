@@ -2,7 +2,7 @@
 <manifest>
        <remote name="a-l"
                 fetch="https://github.com/AOSPA-lavender"
-                revision="refs/heads/topaz-qpr2" />
+                revision="refs/heads/topaz-may" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="kundi"
