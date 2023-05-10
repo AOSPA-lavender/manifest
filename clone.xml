@@ -17,7 +17,7 @@
         <project path="hardware/qcom/display" name="hardware_qcom_display" revision="patch-1" remote="xenxynon" />
         <project path="hardware/qcom/media" name="hardware_qcom_media" revision="topaz" remote="kundi" />
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="topaz" remote="kundi" clone-depth="1" />
-        <project path="keys" name="certs" remote="xenxynon" revision="pa" />
+        <project path="certs" name="certs" remote="xenxynon" revision="pa" />
         <!-- Trees -->
         <project path="kernel/msm-4.4" name="ImSpiDy/kernel_xiaomi_lavender-4.4" remote="github" revision="topaz" />
         <project path="device/xiaomi/lavender" name="pe-tree" remote="lab" revision="13-l" />
