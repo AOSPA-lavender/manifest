@@ -17,7 +17,7 @@
         <project path="hardware/qcom/display" name="hardware_qcom_display" revision="patch-1" remote="xenxynon" />
         <project path="hardware/qcom/media" name="hardware_qcom_media" revision="topaz" remote="kundi" />
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" revision="topaz" remote="kundi" clone-depth="1" />
-        <project path="certs" name="certs" remote="xenxynon" revision="pa" />
+        <project path="certs" name="certs" remote="xenxynon" revision="12" />
         <!-- Trees -->
         <project path="kernel/msm-4.4" name="ImSpiDy/kernel_xiaomi_lavender-4.4" remote="github" revision="topaz" />
         <project path="device/xiaomi/lavender" name="pe-tree" remote="lab" revision="13-l" />
@@ -25,17 +25,23 @@
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="a-l" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="a-l" />
 
-        <remove-project name="AOSPA/android_frameworks_base" />
-        <remove-project name="AOSPA/android_vendor_aospa" />
-        <remove-project name="AOSPA/android_packages_apps_Settings" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="a-l" />
-        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="a-l" />
-        <project path="vendor/aospa" name="android_vendor_aospa" revision="topaz" remote="a-l" revisio="topaz" >
-          <linkfile src="build.sh" dest="rom-build.sh" />
-        </project>
         <project path="prebuilts/clang/host/linux-x86/clang-nexus" name="Project-Nexus/nexus-clang" remote="gitlab" revision="nexus-14" />
         <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
         <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="a-l" revision="master" />
         <project path="vendor/support" name="anirudhkosgi/vendor_support" remote="github" revision="sapphire" />
+        <remove-project name="AOSPA/android_frameworks_base" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="a-l" clone-depth="1" revision="topaz-may" />
+        <remove-project name="AOSPA/android_vendor_aospa" />
+        <project path="vendor/aospa" name="android_vendor_aospa" remote="a-l" revision="topaz" clone-depth="1" >
+          <linkfile src="build.sh" dest="rom-build.sh" />
+        </project>
+        <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
+        <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="a-l" revision="main" />
+        <remove-project name="AOSPA/android_packages_apps_Launcher3" />
+        <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3-1" remote="a-l" />
+        <remove-project name="AOSPA/android_bionic" />
+        <remove-project name="AOSPA/android_packages_apps_Settings" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="topaz-may" remote="a-l" />
+        <project path="bionic" name="pa-gr/android_bionic" revision="topaz" remote="github" />
 
 </manifest>
