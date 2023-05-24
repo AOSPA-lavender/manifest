@@ -11,9 +11,9 @@
         <!-- remove & reclone -->
 
         <remove-project name="AOSPA/android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="aospa-xenxynon" clone-depth="1" revision="topaz-may" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="aospa-xenxynon" revision="topaz-may" />
         <remove-project name="AOSPA/android_vendor_aospa" />
-        <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" revision="topaz" clone-depth="1" >
+        <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-xenxynon" revision="topaz">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
