@@ -2,7 +2,7 @@
 <manifest>
 
         <remote name="aospa-xenxynon"
-                fetch="https://github.com/xenxynon-AOSPA"
+                fetch="https://github.com/AOSPA-lavender"
                 revision="refs/heads/sapphire" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
