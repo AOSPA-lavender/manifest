@@ -3,7 +3,7 @@
 
   <!-- Build -->
   <remove-project name="platform/build_repo" />
-  <project path="build/make" name="AOSPA/android_build" remote="aospa" >
+  <project path="build/make" name="android_build" remote="AOSPA-lavender" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -12,9 +12,9 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/release" />
-  <project path="build/release" name="AOSPA/android_build_release" remote="aospa" />
+  <project path="build/release" name="android_build_release" remote="AOSPA-lavender" />
   <remove-project name="platform/build/soong" />
-  <project path="build/soong" name="AOSPA/android_build_soong" remote="aospa" >
+  <project path="build/soong" name="android_build_soong" remote="AOSPA-lavender" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -22,14 +22,14 @@
   <!-- Bootable -->
   <remove-project name="platform/bootable/deprecated-ota" />
   <project path="bootable/deprecated-ota" name="AOSPA/android_bootable_deprecated-ota" remote="aospa" />
-  <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="AOSPA/android_bootable_recovery" remote="aospa" />
+<!--  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="AOSPA-lavender" /> -->
 
   <!-- Core -->
   <remove-project name="platform/art" />
   <project path="art" name="AOSPA/android_art" remote="aospa" />
   <remove-project name="platform/bionic" />
-  <project path="bionic" name="AOSPA/android_bionic" remote="aospa" />
+  <project path="bionic" name="android_bionic" remote="AOSPA-lavender" />
 
   <!-- Device -->
   <remove-project name="device/qcom/common" />
@@ -53,14 +53,16 @@
   <project path="external/json-c" name="AOSPA/android_external_json-c" remote="aospa" />
   <remove-project name="platform/external/tinycompress" />
   <project path="external/tinycompress" name="AOSPA/android_external_tinycompress" remote="aospa" />
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="android_external_skia" remote="AOSPA-lavender" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="AOSPA/android_frameworks_av" remote="aospa" />
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="AOSPA-lavender" />
   <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="AOSPA/android_frameworks_native" remote="aospa" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="AOSPA-lavender" />
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/interfaces" />
@@ -85,26 +87,42 @@
   <!-- Packages (AOSPA) -->
   <project path="packages/apps/ParanoidDoze" name="AOSPA/android_packages_apps_ParanoidDoze" remote="aospa" />
   <project path="packages/apps/ParanoidPapers" name="AOSPA/android_packages_apps_ParanoidPapers" remote="aospa" />
-  <project path="packages/apps/ParanoidSettings" name="AOSPA/android_packages_apps_ParanoidSettings" remote="aospa" />
+  <project path="packages/apps/ParanoidSettings" name="android_packages_apps_ParanoidSettings" remote="AOSPA-lavender" />
   <project path="packages/apps/ParanoidSystemUI" name="AOSPA/android_packages_apps_Paranoid_SystemUI" remote="aospa" />
   <project path="packages/resources/devicesettings" name="AOSPA/android_packages_resources_devicesettings" remote="aospa" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="AOSPA-lavender" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="AOSPA-lavender" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="AOSPA-lavender" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="AOSPA-lavender" />
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" remote="AOSPA-lavender" />
 
   <!-- Prebuilts (AOSPA) -->
   <project path="prebuilts/extract-tools" name="AOSPA/android_prebuilts_extract-tools" remote="aospa" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
-  <project path="system/core" name="AOSPA/android_system_core" remote="aospa" />
+  <project path="system/core" name="android_system_core" remote="AOSPA-lavender" />
   <remove-project name="platform/system/qcom" />
   <project path="vendor/qcom/opensource/softap" name="AOSPA/android_system_qcom" remote="aospa" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="AOSPA/android_system_sepolicy" remote="aospa" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="AOSPA-lavender" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="system_update_engine" remote="AOSPA-lavender" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="android_system_vold" remote="AOSPA-lavender" />
 
   <!-- Tools (AOSPA) -->
   <project path="tools/extract-utils" name="AOSPA/android_tools_extract-utils" remote="aospa" />
 
   <!-- Vendor (AOSPA) -->
-  <project path="vendor/aospa" name="AOSPA/android_vendor_aospa" remote="aospa" >
+  <project path="vendor/aospa" name="android_vendor_aospa" remote="AOSPA-lavender" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/aospa/apps/ParanoidThemePicker" name="AOSPA/vendor_aospa_apps_ParanoidThemePicker" remote="aospa" />

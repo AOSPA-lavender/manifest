@@ -37,7 +37,11 @@
   <remote  name="blobs-gitlab"
            fetch="https://gitlab.com/ThankYouMario"
            revision="vauxite" />
-
+           
+  <remote  name="AOSPA-lavender"
+           fetch="https://github.com/AOSPA-lavender"
+           revision="vauxite" />
+           
   <remote  name="github"
            fetch="https://github.com" />
 
@@ -50,5 +54,6 @@
   <include name="aosp.xml"/>
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
+  <include name="extras.xml"/>
 
 </manifest>
