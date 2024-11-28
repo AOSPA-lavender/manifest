@@ -57,6 +57,8 @@
   <project path="external/tinycompress" name="AOSPA/android_external_tinycompress" remote="aospa" />
   <remove-project name="platform/external/skia" />
   <project path="external/skia" name="android_external_skia" remote="AOSPA-lavender" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="AOSPA-lavender" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
