@@ -22,8 +22,8 @@
   <!-- Bootable -->
   <remove-project name="platform/bootable/deprecated-ota" />
   <project path="bootable/deprecated-ota" name="AOSPA/android_bootable_deprecated-ota" remote="aospa" />
-<!--  <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="AOSPA-lavender" /> -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="AOSPA-lavender" />
 
   <!-- Core -->
   <remove-project name="platform/art" />
