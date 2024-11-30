@@ -3,7 +3,7 @@
 
   <!-- external -->
   <remove-project name="platform/external/e2fsprogs" />
-  <project path="android_external_e2fsprogs" name="external/e2fsprogs" remote="AOSPA-lavender" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="AOSPA-lavender" />
   <remove-project name="platform/external/mksh" />
   <project path="external/mksh" name="android_external_mksh" remote="AOSPA-lavender" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="github" revision="lineage-22.0" />
